@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="keywords" content="Casino, Crypto Casino, Bitcoin Casino, Slots, Free Spins, Crypto Payments, Fast Crypto Withdrawals, Feature Buyin, Live Casino, Live Crypto Casino">
+    <title></title>
+    <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZD1X7VTQKM"></script>
+    <!-- <script>document.write("<script type='text/javascript' src='<%= BASE_URL %>config.js?v=" + Date.now() + "'><\/script>");</script> -->
+    <script type='text/javascript' src='<%= BASE_URL %>config.js'></script>
+    <script>
+      // set default title 
+      document.title = config.DomainName;
+    </script>
+
+    <script>
+      // set favicon
+      var link = document.createElement('link');
+      link.type = 'image/png';
+      link.rel = 'icon';
+      link.href = config.ThemePath + 'favicon.png';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <script>
+      // setup theme
+      var r = document.querySelector(':root');
+      r.style.setProperty('--main-color', config.Theme.MainColor);
+      r.style.setProperty('--main-color-gradiant', config.Theme.MainColorGradiant);
+      r.style.setProperty('--main-bg-color', config.Theme.MainBgColor);
+      r.style.setProperty('--second-bg-color', config.Theme.SecondBgColor);
+      r.style.setProperty('--vc-pgn-active-color', '#cfe3fe');
+      r.style.setProperty('--vc-pgn-background-color', '#394963');
+      r.style.setProperty('--vc-nav-background-color', '#01070f');
+    </script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZD1X7VTQKM');
+    </script>
+  <script src="https://casino.cur.a8r.games/public/sg.js"></script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+
+    <script>
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/'+config.IntercomAppId;var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    </script>
+  </body>
+</html>
